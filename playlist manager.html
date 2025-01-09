@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Manager</title>
+</head>
+<body>
+    <script>
+        var playlist=["shape of you","die with a smile","sorry","the line","numb"];
+        playlist.push("treat you better");
+        document.write(playlist +"<br>");
+
+        playlist.pop();
+        document.write(playlist +"<br>");
+
+        playlen=playlist.length;
+        document.write(playlen +"<br>");
+
+        document.write(playlist[0] +"<br>"+playlist[4]);
+
+        str=playlist.join(" , ");
+        document.write("<br>"+str);
+
+        // var play3=["without you","runaway","happy now"];
+        // var con=playlist.concat(play3);
+        // document.write(con);
+
+        // nest=[["shape of you","die with a smile"],["sorry","the line"],["without you","runaway"]];
+        // document.write(nest.flat())
+
+        playlist.splice(0,2);
+        document.write(playlist);
+
+        playlist.splice(0,0,"lee","key");
+        document.write("<br>"+playlist);
+
+        st=playlist.sort();
+        document.write("<br>"+st)
+    </script>
+</body>
+</html>

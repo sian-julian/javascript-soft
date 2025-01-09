@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+</head>
+<body>
+    <script>
+        var str="JavaScript is Awesome!";
+        
+        len=str.length;
+        document.write("The length of string: ",+len);
+        document.write("<br>"+"the Character at index 5: ",str.charAt(5));
+        document.write("<br>"+"the Unicode value of the character at index 5: ",str.charCodeAt(5));
+        document.write("<br>"+"the last character of the string: ",str.slice(-1));
+        document.write("<br>"+" the character at index 3: ",str.charAt(3));
+        document.write("<br>"+"the word Script from JavaScript: ",str.slice(4,10));
+        document.write("<br>"+"Extract the word: ",str.slice(14,21));
+        document.write("<br>"+".Extract JavaScript: ",str.slice(0,10));
+        document.write("<br>"+"Convert the entire string to uppercase: ",str.toUpperCase());
+        document.write("<br>"+"Convert the entire string to uppercase: ",str.toLowerCase());
+
+        text=" Let's Learn! "
+        document.write("<br>"+"Concatenate: ",str.concat(text));
+        document.write("<br>"+"Remove spaces from both ends using: ",str.trim());
+        document.write("<br>"+"Remove spaces from beginning: ",str.trimStart());
+        document.write("<br>"+"Remove spaces from end: ",str.trimEnd());
+        document.write("<br>"+"padding at the start so that the total length is 25: ",str.padStart(25,'*'));
+        document.write("<br>"+"padding at the start so that the total length is 25: ",str.padEnd(25,'-'));
+        document.write("<br>"+"Repeat the string 2 times: ",str.repeat(2));
+        document.write("<br>"+"Replace the word Awesome with Cool: ",str.replace("Awesome","Cool"));
+        document.write("<br>"+" Replace all spaces in the string with: ",str.replace(/ /g, "-"));
+    </script>
+</body>
+</html>
