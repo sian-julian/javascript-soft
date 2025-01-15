@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar=[1,3,5,0,7,0,2,0];
+        var i;
+        var index=0;
+        var len=ar.length;
+        
+        for(i=0;i<len;i++)
+        {
+            if(ar[i]!=0)
+            {
+                ar[index]=ar[i];
+                index++;
+            }
+        }
+
+        for(i=index;i<len;i++)
+        {
+            ar[i]=0;
+        }
+        document.write(ar)
+       
+    </script>
+</body>
+</html>

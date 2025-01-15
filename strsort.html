@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text="The rain in SPAIN stays mainly in the plain";
+        var arr=text.split(" ");
+        document.write("the original array:"+arr.join(',')+"<br>");
+
+        for(var i=0;i<arr.length;i++)
+        {
+            for(j=0;j<arr.length-i-1;j++)
+            {
+                if(arr[j].toLowerCase()>arr[j+1].toLowerCase())
+                {
+                    var temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        document.write("the sorted array:",arr);
+    </script>
+</body>
+</html>
